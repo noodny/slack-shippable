@@ -1,0 +1,26 @@
+{
+  "name": "slack-shippable",
+  "version": "1.0.0",
+  "description": "Send slack notification from shippable CI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noodny/slack-shippable.git"
+  },
+  "keywords": [
+    "shippable",
+    "slack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noodny/slack-shippable/issues"
+  },
+  "homepage": "https://github.com/noodny/slack-shippable",
+  "dependencies": {
+    "node-slack": "0.0.7"
+  }
+}
