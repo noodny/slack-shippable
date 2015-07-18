@@ -21,6 +21,7 @@ function getCommitDetails(hash) {
 
 var status = process.argv[2] || false,
     statusText = status ? 'succeeded' : 'failed',
+    channel = process.env.SLACK_CHANNEL || '#general',
     color = status ? 'good' : 'danger',
     buildUrl = process.env.BUILD_URL || 'http://BUILD_URL',
     buildNumber = process.env.BUILD_NUMBER || 0,
@@ -49,7 +50,7 @@ var message = {
 
 slack.send({
     text: text,
-    channel: '#general',
+    channel: channel,
     username: 'Shippable',
     attachments: [message]
 });
